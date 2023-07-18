@@ -1,21 +1,75 @@
+html {
+    scroll-behavior: smooth;
+  }
 
 body, html {
-    font-family: Georgia;
-  }
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+ }
 
 body{
 /* The image used */
+    
+    background-color: #EFD8BD;
+    /* Full height & width 
+    height: 100%;
+    width: 100%;*/
+    /* Center and scale the image nicely */
 
-background-image: url("background.jpg");
-/* Full height & width */
-height: 100%;
-width: 100%;
-/* Center and scale the image nicely */
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    }
+/* homepageContainer grid */
+.container-grid {
 
+    display: grid;
+    width: 100%;
+    /* grid-template-rows: auto auto auto; */
+    grid-template-columns:  auto 300px;
+    gap: 50px 50px;
+    justify-content: space-around;
+    align-content: center;
+    color: #000;;
+    position: relative;
 }
+
+/*Profile picture*/
+
+.profile-picture {
+    /* border-radius: 50%;
+    grid-column-end: 3; */
+    border-radius: 50%;
+    width: 100%;
+    height: 85%; 
+}
+.ProfilePicture{
+    border-radius: 50%;
+    display: block;
+    width: 25%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* Intro */
+
+.HomePage {
+    text-align:left;
+    font-size: large;
+    align-items:center;
+    padding-top: 100px;
+}
+
+.intro {
+    text-align: left;
+    font-size: x-large;
+    font-weight:lighter;
+}
+
+
 /********************************************************************************************************************************/
 /* Horizontal NavBar*/
 ul.navbar-nav{
@@ -28,7 +82,8 @@ ul.navbar-nav{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color:transparent;
+    font-size:larger;  
   } 
   
 li{
@@ -37,7 +92,8 @@ li{
 
 .active-nav a{
     display: flex;
-    color: white;
+    border-radius: 30%;
+    color: #454E55;
     padding: 14px 16px;
     text-decoration :none;
     list-style-type: none;
@@ -45,43 +101,12 @@ li{
   }
   /* Change the link color to #111 (black) on hover */
 li a:hover {
-    background-color:cadetblue;
+    background-color:#BDB09B;
     color: aliceblue;
     letter-spacing:0.25em;
     box-shadow:0 0 35px ;
   }
-/*Profile Picture*/  
-.ProfilePicture{
-    border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-
-/***********************************************************************************************************************************/
-
-/**HomePage**/
-/**Move text*/
-marquee{
-    
-}
-/*Introduction*/
-.intro {
-    text-align: center;
-    font-size: x-large;
-    font-weight:lighter;
-}
-
-h1,
-h2,
-h3{
-    margin: auto;
-    margin-block: 50px;
-    text-align: center;
-    font-size: '40 px';
-    font-family: Georgia;
-}
 
 /***********************************************************************************************************************************/
 /*Contact Form*/
@@ -122,8 +147,16 @@ input[type=submit] {
 
   /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-    background-color: cadetblue;
+    background-color: #70544A;
   }
   
   
+  /* Scroll pages */
+  #index{
+    scroll-behavior: smooth;
+
+  }
+  #contact{
+    scroll-behavior: smooth;
+  }
   
